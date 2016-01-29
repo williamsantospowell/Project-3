@@ -1,0 +1,242 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #384047;
+
+}
+
+form{
+	max-width:400px;
+	margin:4px auto;
+	padding: 30px 5px;
+	/*background:#f4f7f8;*/
+	/*border-radius:8px;*/
+	border-top: 4px solid #344152;
+	
+}
+h2 {
+	text-align:center;
+	margin:0 0 10px 0;
+	color:#344152;
+
+}
+
+footer p {
+	color:#e8eeef;
+	padding-bottom:60px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select
+ {
+	background:rgba(255,255,255,0.1);
+	/*background:tomato;*/
+	border:none;
+	font-size:16px;
+	height:auto;
+	margin:0;
+	/*outline:0;*/
+	padding:15px;
+	width:100%;
+	background-color:#e8eeef;
+	color:#8a97a0;
+	border-radius:4px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03)inset;
+	margin-bottom:30px;
+	outline-width:2px;
+
+}
+input[id="zipcode"] {
+width:100px;
+ -webkit-transition: width .35s ease-in-out;
+transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[id="zipcode"]:focus{
+  width: 250px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 10px 0;
+}
+
+input[placeholder] {
+   text-align:right;
+}
+
+ 
+::-webkit-input-placeholder {
+    text-align:right;
+}
+ 
+::-moz-placeholder {
+    text-align:right; 
+}
+ 
+:-ms-input-placeholder {
+    text-align:right; 
+}
+
+input:focus {
+	background-color:#ffffea;
+}
+
+
+select{
+	padding:6px;
+	height:32px;
+	border-radius:2px;
+}
+button{
+	padding:19px 39px 18px 39px;
+	color:#fff;
+	background-color:#2FAA96;
+	font-size:18px;
+	text-align:center;
+	font-style:normal;
+	border-radius:5px;
+	width:100%;
+	border:1px solid #3ac162;
+	box-shadow:0 -1px 0 rgba(255,255,255,0.1)inset;
+	cursor:pointer;	
+}
+button:hover {
+	background-color:#344152;
+}
+fieldset{
+	margin-bottom:30px;
+	border:none;
+}
+legend{
+	font-size:1.4em;
+	margin-bottom:10px;
+	color:#344152;
+	font-weight:bolder;
+	padding:5px;
+
+}
+label{
+	display:block;
+	margin-bottom:8px;
+	color:#8a97a0;
+
+}
+label.light {
+	font-weight:300;
+	display:inline;
+}
+footer{
+	text-align:center;
+}
+#logo {
+	text-transform:uppercase;
+	padding:20px;
+	background-color:#344152;
+	color:white;
+	font-size:1.4em;
+	text-align:center;
+}
+#header {
+	border-bottom:6px solid #344152;
+	text-align:center;
+	font-size:18px;
+	padding-bottom:30px;
+
+
+}
+#header_text {
+	color:#8a97a0;
+}
+
+#line_border {
+	border-bottom: 4px solid #344152;
+}
+#newsletter_instructions{
+	color:#8a97a0;
+	margin-top:0;
+}
+
+.radio{
+	padding:15px 15px 15px 0;
+}
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 880px;
+
+  }
+  #header {
+  	max-width:880px;
+  	text-align:center;
+  	margin:0 auto;
+  }
+label:nth-child(-n+14){
+    display: inline-block; 
+    width: 20%; 
+
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+select
+ {
+	background:rgba(255,255,255,0.1);
+	/*background:tomato;*/
+	border:none;
+	font-size:16px;
+	height:auto;
+	margin:0;
+	outline:0;
+	padding:15px;
+	width:70%;
+	background-color:#e8eeef;
+	color:#8a97a0;
+	border-radius:4px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03)inset;
+	margin-bottom:30px;
+	outline-width:2px;
+	/*text-align:right;*/
+}
+input:focus {
+	background-color:#ffffea;
+}
+input[id="zipcode"] {
+width:30%;
+ -webkit-transition: width .35s ease-in-out;
+transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[id="zipcode"]:focus{
+  width: 70%;
+}
+
+
+
+}
